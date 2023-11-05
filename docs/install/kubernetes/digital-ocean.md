@@ -41,7 +41,7 @@ the `k8s-flowforge-kubeconfig.yml` file which will allow you to connect to the c
 ```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
-helm --kubeconfig=./k8s-flowforge-kubeconfig.yaml install nginx-ingress \
+helm --kubeconfig=./k8s-flowforge-kubeconfig.yml install nginx-ingress \
   ingress-nginx/ingress-nginx --namespace ingress-nginx \
   --create-namespace \
   --set controller.publishService.enabled=true \
@@ -61,7 +61,7 @@ Run the following to get the external IP address of the Nginx Ingress
 Controller
 
 ```bash
-kubectl --kubeconfig=./k8s-flowforge-kubeconfig.yaml \
+kubectl --kubeconfig=./k8s-flowforge-kubeconfig.yml \
   -n ingress-nginx get service nginx-ingress-ingress-nginx-controller
 ```
 
