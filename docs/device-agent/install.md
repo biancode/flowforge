@@ -56,6 +56,17 @@ services:
       - /path/to/device.yml:/opt/flowfuse-device/device.yml
 ```
 
+If you want to enable the Web-UI for the agent, then use the `command` option of Docker-Compose to 
+set [the parameters](https://flowfuse.com/docs/device-agent/running/#device-agent-command-line-options) of the `flowfuse-device-agent` in your docker-compose.yml file.
+
+
+```yaml
+  ...
+    image: flowfuse/device-agent:latest
+    command: "flowfuse-device-agent -d /path/to/working/directory -w --ui-user admin --ui-pass password --ui-port 8081"
+  ...
+```
+
 ## Configuration
 
 The agent configuration is provided by a `device.yml` file within its working
