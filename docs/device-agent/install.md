@@ -93,6 +93,21 @@ the same machine.
 flowfuse-device-agent --port=1881
 ```
 
+## Access the agent
+
+### Editor
+
+To access the editor of the agent use: http://DEVICE-IP:PORT/device-editor/
+
+### Dashboard 2.0
+
+To access the Dashboard 2.0 of the agent use: http://DEVICE-IP:PORT/dashboard/
+
+### Web-UI
+
+The [Web-UI of the agent[(https://flowfuse.com/docs/device-agent/running/#device-agent-command-line-options) is to configure the agent secured via a Web-Page.
+To access the Web-UI if configured for the agent use: http://DEVICE-IP:WEB-UI-PORT/
+
 ## Upgrading the agent
 
 To use the latest features on FlowFuse as well as on the edge device, it is advised to upgrade
